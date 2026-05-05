@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": false,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": ".*\\.(md|tex)$",
+        "cmd": "make",
+        "isAsync": true
+      }
+    ]
+  }
+}
