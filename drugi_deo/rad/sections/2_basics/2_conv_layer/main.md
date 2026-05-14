@@ -51,6 +51,16 @@ $$
 
 где је $\eta$ стопа учења (*learning rate*).
 
+Конволуцију можемо применити над подацима различитих димензија, при чему улаз и кернел морају бити исте димензионалности. У случају временских података (нпр аудио сигнал у временском домену) примењујемо 1D конволуцију, код монохроматских слика 2D док код слика са више канала (слике у боји) или снимака користимо конволуцију са више димензија. У 3D случају, за сваки филтер, сваки канал једног филтера се примењује над одговарајућем каналу улаза и вредности се сумирају.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=6cm]{figures/2_basics/rgb_conv.png}
+\caption{RGB конволуција} 
+\label{fig:rgb_conv}
+\end{figure}
+
+\newpage
 За дефинисање конволуционог слоја се узима више улазних параметара
 
 - **Величина кернела**
@@ -60,7 +70,6 @@ $$
     Представља број додатних пиксела којим ће се оивичити улазни податак. Циљ је одржати једнаким величине улаза и излаза, као и дати подједнаку важност ивичним подацима.
 
 Комбинацијом вредности ових параметара се одређује и величина излаза конволуционог слоја, који се затим доводи као улаз *pooling* слоју.
-\newpage
 
 #### *Pooling* слој\
 \
@@ -68,7 +77,7 @@ $$
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{figures/2_basics/cnn_full.png}
+\includegraphics[width=8cm]{figures/2_basics/cnn_full.png}
 \caption{Архитектура конволуционе мреже} 
 \label{fig:conv_full}
 \end{figure}
@@ -77,8 +86,8 @@ $$
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=7cm]{figures/2_basics/pooling.png}
-\caption{*Pooling* операција} 
+\includegraphics[width=6cm]{figures/2_basics/pooling.png}
+\caption{Pooling операција} 
 \label{fig:pooling}
 \end{figure}
 
