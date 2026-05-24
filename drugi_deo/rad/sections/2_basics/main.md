@@ -6,3 +6,5 @@
 {{include sections/2_basics/1_convolution/main.md}}
 
 {{include sections/2_basics/2_rnns/main.md}}
+
+{{include sections/2_basics/3_gnn/main.md}}
