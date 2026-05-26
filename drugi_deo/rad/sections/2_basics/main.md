@@ -8,3 +8,5 @@
 {{include sections/2_basics/2_rnns/main.md}}
 
 {{include sections/2_basics/3_gnn/main.md}}
+
+{{include sections/2_basics/4_optimizations/main.md}}
