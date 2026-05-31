@@ -66,7 +66,7 @@ $$
 \begin{figure}[h]
 \centering
 \includegraphics[width=6cm]{figures/2_basics/multihead.png}
-\caption{$Multihead attention$}
+\caption{$Multihead\ attention$}
 \label{fig:multihead}
 \end{figure}
 
