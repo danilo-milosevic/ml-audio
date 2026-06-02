@@ -5,5 +5,3 @@
 {{include sections/2_basics/4_optimizations/1_federated/main.md}}
 
 {{include sections/2_basics/4_optimizations/2_quantization/main.md}}
-
-{{include sections/2_basics/4_optimizations/3_binarization/main.md}}
