@@ -28,3 +28,11 @@ header-includes: |
 {{include sections/2_basics/main.md}}
 
 \newpage
+
+{{include sections/3_emotion_cnn/main.md}}
+
+{{include sections/4_emotion_gnn/main.md}}
+
+{{include sections/5_conclusion/main.md}}
+
+{{include sections/6_literature/main.md}}
