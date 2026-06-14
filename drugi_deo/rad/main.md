@@ -39,4 +39,6 @@ header-includes: |
 
 {{include sections/5_conclusion/main.md}}
 
+\newpage
+
 {{include sections/6_literature/main.md}}
