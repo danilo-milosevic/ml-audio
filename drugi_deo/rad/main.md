@@ -31,7 +31,11 @@ header-includes: |
 
 {{include sections/3_emotion_cnn/main.md}}
 
+\newpage
+
 {{include sections/4_emotion_gnn/main.md}}
+
+\newpage
 
 {{include sections/5_conclusion/main.md}}
 
