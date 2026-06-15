@@ -78,5 +78,3 @@ $$
 \caption{Граф трансформер неуронска мрежа} 
 \label{fig:gt}
 \end{figure}
-
-\newpage
