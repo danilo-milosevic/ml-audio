@@ -9,4 +9,4 @@
 
 {{include sections/2_basics/3_gnn/main.md}}
 
-{{include sections/2_basics/4_federated/main.md}}
+{{include sections/2_basics/4_optimizations/main.md}}

@@ -8,3 +8,5 @@
 {{include sections/4_emotion_gnn/2_architecture/main.md}}
 
 {{include sections/4_emotion_gnn/3_results/main.md}}
+
+{{include sections/4_emotion_gnn/4_optimization/main.md}}
