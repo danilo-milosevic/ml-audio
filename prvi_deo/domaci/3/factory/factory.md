@@ -72,4 +72,4 @@ Kod belog i roze šuma su gori rezultati, zvukovi mašine su prepoznatljivi ali 
 
 ![Uklanjanje šuma online alatom](autoreg.png)
 
-Za uklanjanje šuma je korišćen autoregresivni model. Možemo videti da model dosta bolje uklanja frekvencije koje šum doda, međutim to izaziva i veliki gubitak u kvalitetu, s obzirom da model ukloni i frekvencije koje nisu bile šum
+Za uklanjanje šuma je korišćen autoregresivni model. Možemo videti da model dosta bolje uklanja frekvencije koje šum doda, međutim to izaziva i veliki gubitak u kvalitetu, s obzirom da model ukloni i frekvencije koje nisu bile šum.
