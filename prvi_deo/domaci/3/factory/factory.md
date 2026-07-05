@@ -67,6 +67,7 @@ Očekivano, beli šum pojačava sve frekvencije
 
 Uklanjanjem šuma u audacity možemo da primetimo da kod braon i gradskog šuma se uklanja deo viših frekvencija i uspešno se otklanja bar deo šuma.
 Kod belog i roze šuma su gori rezultati, zvukovi mašine su prepoznatljivi ali čak i sa više različitih podešavanja nismo u stanju da uklonimo šum.
+S obzirom da zvuk mašine i šum slično zvuče teško je odrediti podešavanja za noise reduction koja bi uklonila šum.
 
 ### Online alat
 
