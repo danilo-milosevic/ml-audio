@@ -71,4 +71,4 @@ Uklanjanjem šuma u Audacity vidimo da je najlakše očistiti braon šum i grads
 
 ![Uklanjanje šuma online alatom](autoreg.png)
 
-Za uklanjanje šuma je korišćen autoregresivni model. Možemo videti da model dosta bolje uklanja frekvencije koje šum doda, međutim to izaziva i veliki gubitak u kvalitetu, s obzirom da model ukloni i frekvencije koje nisu bile šum.
+Za uklanjanje šuma je korišćen autoregresivni model. Možemo videti da model zadržava frekvencije izgovora što poboljšava razumljivost ali i dalje ima dosta šuma koji možemo da čujemo.
