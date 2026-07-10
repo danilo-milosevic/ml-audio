@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.io import wavfile
 
-from consts.consts import INT16_MAX, INT32_MAX, UINT8_MAX
+from extraction.consts import INT16_MAX, INT32_MAX, UINT8_MAX
 def load_wav_as_float(path):
     fs, data = wavfile.read(path)
     data_type = data.dtype
@@ -27,4 +27,4 @@ def load_wav_as_float(path):
     if sig.ndim > 1:
         sig = sig.mean(axis=1)
  
-    return sig, fs, bits
+    return fs, sig, bits
