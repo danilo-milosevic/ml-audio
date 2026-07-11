@@ -5,16 +5,12 @@ import librosa.display
 from extraction.extract import FeatureTypes
 
 _2D_FEATURES = {
-    FeatureTypes.MFCC,
     FeatureTypes.CHROMA,
-    FeatureTypes.SPECTROGRAM,
     FeatureTypes.TEMPOGRAM,
 }
 
 _SPECSHOW_YAXIS = {
-    FeatureTypes.MFCC: None,
     FeatureTypes.CHROMA: 'chroma',
-    FeatureTypes.SPECTROGRAM: 'mel',
     FeatureTypes.TEMPOGRAM: 'tempo',
 }
 
@@ -63,7 +59,8 @@ def _plot_boundaries(ax, boundaries):
 
 
 def plot_features(extracted_features, sr, hop_length=512, features=None,
-                   boundaries=None, figsize=(9, 4), hspace=1.0, ncols=2):
+                   boundaries=None, figsize=(9, 4), hspace=1.0, ncols=2,
+                   save_path=None, dpi=300):
     features = features or list(extracted_features.keys())
     nrows = int(np.ceil(len(features) / ncols))
 
@@ -94,4 +91,8 @@ def plot_features(extracted_features, sr, hop_length=512, features=None,
 
     plt.tight_layout()
     fig.subplots_adjust(hspace=hspace, wspace=0.3)
+
+    if save_path is not None:
+        fig.savefig(save_path / "results.png", dpi=dpi, bbox_inches="tight")
+
     plt.show()

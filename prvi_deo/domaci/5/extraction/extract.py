@@ -4,13 +4,11 @@ from enum import Enum
 class FeatureTypes(Enum):
     AMPLITUDE_ENVELOPE = 'amplitude_envelope'
     CHROMA = 'chroma'
-    MFCC = 'mfcc'
     ONSET_STRENGTH = 'onset_strength'
     RMS = 'rms'
     SPECTRAL_BANDWITH = 'spectral_bandwith'
     SPECTRAL_CENTROID = 'spectral_centroid'
     SPECTRAL_ROLLOFF  = 'spectral_roloff'
-    SPECTROGRAM = 'spectrogram'
     TEMPOGRAM = 'tempogram'
     ZERO_CROSSING_RATE = 'zero_crossing_rate'
 
@@ -19,13 +17,11 @@ DEFAULT_FEATURES = [feature_type.value for feature_type in FeatureTypes]
 FEATURE_EXTRACTORS = {
     FeatureTypes.AMPLITUDE_ENVELOPE: _time.extract_amplitude_envelope,
     FeatureTypes.CHROMA: _perception.extract_chroma,
-    FeatureTypes.MFCC: _perception.extract_mfcc,
     FeatureTypes.ONSET_STRENGTH: _temporal.extract_onset_strength,
     FeatureTypes.RMS: _time.extract_rms,
     FeatureTypes.SPECTRAL_BANDWITH: _frequency.extract_spectral_bandwith,
     FeatureTypes.SPECTRAL_CENTROID: _frequency.extract_spectral_centroid,
     FeatureTypes.SPECTRAL_ROLLOFF: _frequency.extract_spectral_rolloff,
-    FeatureTypes.SPECTROGRAM: _perception.extract_spectrogram,
     FeatureTypes.TEMPOGRAM: _temporal.extract_tempogram,
     FeatureTypes.ZERO_CROSSING_RATE: _time.extract_zero_crossing_rate
 }
